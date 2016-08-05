@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF">
+
+    <com.severaldays.quickindexlistview.index.SectionBar
+            android:id="@+id/section_bar"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/index_section_shape"/>
+
+    <com.severaldays.quickindexlistview.index.QuickIndexListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/section_bar"
+            android:scrollbars="none"/>
+
+    <TextView
+            android:id="@+id/tv_index_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_alignTop="@id/list_view"
+            android:background="@drawable/titlebar_shape"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:textColor="#FFBABABA"
+            android:textSize="16sp"/>
+
+    <TextView
+            android:id="@+id/index_tip_view"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/index_tipview_shape"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dp"
+            android:visibility="invisible"/>
+
+</RelativeLayout>
